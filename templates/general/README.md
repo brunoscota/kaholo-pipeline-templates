@@ -10,7 +10,7 @@ This locations is for gcp templates, the ones that you can use for gcp environme
 
 This template is for deploying a demo application to a kaholo.io account. We're asssuming your app is containerized and has Dockerfile in your repo and k8s deployment yaml file.
 
-![app-demo-deploy](./images/app-demo-deploy.png)
+![app-demo-deploy](../../images/app-demo-deploy.png)
 
 ### Configuration variables
 
