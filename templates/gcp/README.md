@@ -35,13 +35,12 @@ Example:
   "git_source": "brunoscota/kaholo-demo-gke-deployment.git",
   "git_branch": "main",
   "k8s_yamlFile": "k8s.deployment.yaml",
-  "k8s_endpointURL": "https://35.185.6.127",
   "k8s_namespace": "default",
+  "k8s_serviceAccount": "kaholo@quantum-petal-339119.iam.gserviceaccount.com",
   "docker_image_name": "brunoscota/kaholo-demo",
   "docker_image_tag": "latest"
 }
 ```
-
 
 ### Vault secrets
 
