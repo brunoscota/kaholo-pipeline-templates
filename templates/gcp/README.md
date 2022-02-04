@@ -6,7 +6,7 @@ This locations is for GCP templates, the ones that you can use for gcp environme
 
 * [app-demo-deploy-with-gke](#app-demo-deploy)
 
-## app-demo-deploy-with-gke
+## Application Deployment on GKE Cluster
 
 This template is for deploying a demo application to a kaholo.io account. We're asssuming your app is containerized and has Dockerfile in your repo and k8s deployment yaml file.
 
