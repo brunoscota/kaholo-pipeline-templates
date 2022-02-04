@@ -1,18 +1,16 @@
-# GCP
+# General
 
-This locations is for GCP templates, the ones that you can use for gcp environment.
+This locations is for gcp templates, the ones that you can use for gcp environment.
 
 ## Table of contents
 
 * [app-demo-deploy-with-gke](#app-demo-deploy)
 
-## Application Deployment on GKE Cluster
+## Simple Application Deployment on K8s
 
 This template is for deploying a demo application to a kaholo.io account. We're asssuming your app is containerized and has Dockerfile in your repo and k8s deployment yaml file.
 
-![app-demo-deploy-gke](../../images/app-demo-deploy-gke.png)
-
-> **WARNING**: This template only works with [this customized GKE plugin](https://github.com/brunoscota/kaholo-plugin-google-cloud-kubernetes-engine). Because its uses a custom method called `Describe Cluster Credentials` which will be used by kubernetes plugin to connect and apply the YAML file to the cluster dinamically.
+![app-demo-deploy](../images/app-demo-deploy.png)
 
 ### Configuration variables
 
@@ -35,12 +33,13 @@ Example:
   "git_source": "brunoscota/kaholo-demo-gke-deployment.git",
   "git_branch": "main",
   "k8s_yamlFile": "k8s.deployment.yaml",
+  "k8s_endpointURL": "https://35.185.6.127",
   "k8s_namespace": "default",
-  "k8s_serviceAccount": "kaholo@quantum-petal-339119.iam.gserviceaccount.com",
   "docker_image_name": "brunoscota/kaholo-demo",
   "docker_image_tag": "latest"
 }
 ```
+
 
 ### Vault secrets
 

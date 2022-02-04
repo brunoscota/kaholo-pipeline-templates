@@ -1,0 +1,10 @@
+---
+# defaults file for elk
+ansible_ssh_private_key_file: ~/.ssh/google_compute_engine
+# Values will be picked from Kaholo
+elastic_password: <password>
+apm_password: <password>
+kibana_password: <password>
+logstash_passord: <password>
+beats_password: <password>
+remote_monitoring_password: <password>
